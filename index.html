@@ -1,14 +1,89 @@
-<!doctype <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>week 4 game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-<body>
-    <h1>New Game</h1>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Crystals Collector">
+
+    <!-- add link to the jQuery Library -->
+    <script src="assets/javascript/jquery-3.3.1.min.js"></script>
+     <!-- Link to game javascript  -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+   
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Links to reset, css -->
+    <link rel="icon" type="image/png" href="./assets/images/diamond.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <title>Crystal Collector</title>
+    <!-- Loads the javascript component of the game -->
+	<script src="assets/javascript/game.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <div class="container">
+            <div class="jumbotron">            
+                <!-- header at the top -->
+                <h1 class="display-4">Crystals Collector !</h1>
+                <!-- then come instructions -->
+                <h4><small>You will be given a random number at the start of the game</small></h4>
+                <h4><small>There are four srystals below. By clicking on a Crystal you will add a specific amount of points to your total score.</small></h4>
+                <h4><small>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</small></h4>
+                <h4><small>The value of each crystal is hidden from you until you click on it.</small></h4>
+                <h4><small>Each time when the game starts, the game will change the values of each crystal.</small></h4>            
+            </div>
+            <!-- random number div and win / lose div -->
+            <div class="row">
+                <div class="col-md-1 col-md-offset-1 randomNumberDiv">
+                    <h2 id="randomNumber">Random #:</h2>
+                </div>
+                <div class="col-md-2 col-md-offset-1 ">
+                    
+                </div>
+                
+                
+                <div class="col-md-1 col-md-offset-1 winLoseDiv">
+                        <p id="winsTally">Wins: </p><br>
+                        <p id="lossesTally">Losses: </p>
+                </div>
+            </div>
+            <!-- gems -->
+            <div class="row">
+                <div class="col-md-1 col-md-offset-1 gem" value="gem1">
+                    <img src="assets/images/gem1.png" class="img-responsive" alt="green">
+                </div>
+                <div class="col-md-1 col-md-offset-1 gem" value="gem2">
+                        <img src="assets/images/gem2.png" class="img-responsive" alt="red">
+                </div>
+                <div class="col-md-1 col-md-offset-1 gem" value="gem3">
+                        <img src="assets/images/gem3.png" class="img-responsive" alt="yellow">
+                </div>
+                <div class="col-md-1 col-md-offset-1 gem" value="gem4">
+                        <img src="assets/images/gem4.png" class="img-responsive" alt="blue">
+                </div>
+            </div>
+
+            <!-- score text row -->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 scoreDiv">
+                    <p>Your total score is :</p>
+                </div>                
+            </div>
+            <!-- user score row -->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 scoreDiv">
+                    <h2 id="userScore">score</h2>
+                </div>                
+            </div>
+    <!--End the container -->
+    </div>
+
+    
+    
+    
+  </body>
 </html>
