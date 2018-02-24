@@ -79,7 +79,7 @@ $(document).ready(function() {
         console.log(pressed);
         // add the value of the gem to the user's ongoing score tally
         if (pressed == "gem1") {
-        	userTallyScore += gemOneValue;
+        	userTallyScore = userTallyScore + gemOneValue;
         } else if (pressed == "gem2") {
         	userTallyScore += gemTwoValue;
         } else if (pressed == "gem3") {
